@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    enviroment:
+      - LOCAL: true
+    ports:
+      - "7071:7071"
+    volumes: 
+      - .:/app
+
